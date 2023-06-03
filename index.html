@@ -7,124 +7,133 @@
     
     <style>
         /* Estilos generales */
-    body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-    .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-    h1, h2 {
-    color: #333;
-    }
+        h1, h2 {
+            color: #333;
+        }
 
-    p {
-    line-height: 1.5;
-    }
+        p {
+            line-height: 1.5;
+        }
 
-    /* Estilos de encabezado */
-    header {
-    background-color: #e0f89e;
-    padding: 20px;
-    color: #fff;
-    }
-    .logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        /* Estilos de encabezado */
+        header {
+            background-color: #e0f89e;
+            padding: 20px;
+            color: #fff;
+        }
 
-    .logo-avatar {
-  border-radius: 20%;
-  width: 160px;
-  height: 100px;
-  object-fit: cover;
-  overflow: hidden;
-  object-position: center center;
-}
-    /* Estilos de navegación */
-    nav {
-    margin-top: 10px;
-    }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    }
+        .logo-avatar {
+            border-radius: 20%;
+            width: 160px;
+            height: 100px;
+            object-fit: cover;
+            overflow: hidden;
+            object-position: center center;
+        }
 
-    nav ul li {
-    display: inline;
-    margin-right: 10px;
-    }
+        /* Estilos de navegación */
+        nav {
+            margin-top: 10px;
+        }
 
-    nav ul li a {
-    text-decoration: none;
-    color: #333;
-    }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-    /* Estilos de secciones */
-    section {
-    margin-bottom: 30px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
 
-    section h2 {
-    margin-bottom: 10px;
-    color: #ffba49;
-    }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
 
-    /* Estilos de pie de página */
-    footer {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    }
+        /* Estilos de secciones */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
 
+        section {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
+        section h2 {
+            margin-bottom: 10px;
+            color: #ffba49;
+        }
+
+        /* Estilos de pie de página */
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="logo-container">
-        <img src="LogoCorto.png" alt="Logo de mi empresa" class="logo-avatar"> 
-        <h1></h1>
+            <img src="LogoCorto.png" alt="Logo de mi empresa" class="logo-avatar"> 
+        </div>
         <nav>
             <!-- Menú de navegación aquí -->
         </nav>
     </header>
 
-    <section id="quienes-somos">
-        <h2>¿Quiénes somos?</h2>
-        <p>Somos una empresa que ayuda a negocios a encontrar productos y servicios esenciales para su funcionamiento. Simplificamos el proceso y mantenemos las operaciones sin interrupciones, sin importar el tamaño o la industria de la empresa.</p>
-    </section>
+    <div class="container">
+        <div class="grid-container">
+            <section id="quienes-somos">
+                <h2>¿Quiénes somos?</h2>
+                <p>Somos una empresa enfocada en ayudar a su negocio a encontrar productos y servicios esenciales para su funcionamiento. Simplificamos el proceso y mantenemos las operaciones sin interrupciones, sin importar el tamaño o la industria de la empresa.</p>
+            </section>
 
-    <section id="soluciones-empresariales">
-        <h2>Soluciones Empresariales</h2>
-        <p>Ofrecemos soluciones integrales para empresas en crecimiento o recién llegadas al país. Nos encargamos de brindar productos y servicios que no están directamente relacionados con la actividad comercial, pero que son fundamentales para mantener las operaciones en marcha.</p>
-    </section>
+            <section id="soluciones-empresariales">
+                <h2>Soluciones Empresariales</h2>
+                <p>Ofrecemos soluciones integrales para empresas en crecimiento o recién llegadas al país. Nos encargamos de brindar productos y servicios que no están directamente relacionados con la actividad comercial, pero que son fundamentales para mantener las operaciones en marcha.</p>
+            </section>
 
-    <section id="catalogo-productos">
-        <h2>Catálogo de Productos</h2>
-        <p>Explora nuestro catálogo de productos y encuentra todo lo que necesitas para tu negocio. Ofrecemos una amplia variedad de productos, desde suministros de oficina hasta equipos especializados para diferentes industrias.</p>
-    </section>
+            <section id="catalogo-productos">
+                <h2>Catálogo de Productos</h2>
+                <p>Explora nuestro catálogo de productos y encuentra todo lo que necesitas para tu negocio. Ofrecemos una amplia variedad de productos, desde suministros de oficina hasta equipos especializados para diferentes industrias.</p>
+            </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si deseas más información sobre nuestras soluciones empresariales o si tienes alguna consulta, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
-        <p>Teléfono: +57 310 232 0492</p>
-        <p>Email: morenomakers@gmail.com</p>
-    </section>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Si deseas más información sobre nuestras soluciones empresariales o si tienes alguna consulta, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+                <p>Teléfono: +57 310 232 0492</p>
+                <p>Email: morenomakers@gmail.com</p>
+            </section>
+        </div>
+    </div>
 
     <footer>
         <p>Derechos de autor © 2023 Moreno Makers. Todos los derechos reservados.</p>
