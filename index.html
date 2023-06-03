@@ -16,8 +16,7 @@
         }
 
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
+            max-width: 80%;
             padding: 20px;
         }
 
@@ -42,14 +41,7 @@
             align-items: center;
         }
 
-        .logo-avatar {
-            border-radius: 20%;
-            width: 160px;
-            height: 100px;
-            object-fit: cover;
-            overflow: hidden;
-            object-position: center center;
-        }
+        
 
         /* Estilos de navegación */
         nav {
@@ -75,7 +67,7 @@
         /* Estilos de secciones */
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             grid-gap: 20px;
         }
 
@@ -96,6 +88,14 @@
             padding: 20px;
             text-align: center;
             color: #fff;
+            margin-top: 20px; /* Modifica este valor según tus necesidades */
+        }
+
+        /* Estilos para pantallas más pequeñas */
+        @media screen and (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
         }
     </style>
 </head>
@@ -113,12 +113,12 @@
         <div class="grid-container">
             <section id="quienes-somos">
                 <h2>¿Quiénes somos?</h2>
-                <p>Somos una empresa enfocada en ayudar a su negocio a encontrar productos y servicios esenciales para su funcionamiento. Simplificamos el proceso y mantenemos las operaciones sin interrupciones, sin importar el tamaño o la industria de la empresa.</p>
+                <p>Somos una empresa enfocada en ayudar a su negocio a encontrar productos y servicios esenciales para su funcionamiento. Simplificamos el proceso y mantenemos las operaciones sin interrupciones.</p>
             </section>
 
             <section id="soluciones-empresariales">
                 <h2>Soluciones Empresariales</h2>
-                <p>Ofrecemos soluciones integrales para empresas en crecimiento o recién llegadas al país. Nos encargamos de brindar productos y servicios que no están directamente relacionados con la actividad comercial, pero que son fundamentales para mantener las operaciones en marcha.</p>
+                <p>Ofrecemos soluciones integrales para empresas en crecimiento o recién llegadas al país. Nos encargamos de brindar productos y servicios que son fundamentales para mantener las operaciones en marcha.</p>
             </section>
 
             <section id="catalogo-productos">
